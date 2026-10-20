@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>Thank you for your order.</title>
+    <style>
+      @media only screen and (max-width: 620px) {
+        .container {
+          width: 100% !important;
+        }
+        .content-cell {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        .dm-page {
+          background-color: #66574f !important;
+        }
+        .dm-card {
+          background-color: #2a2422 !important;
+        }
+        .dm-text {
+          color: #f1e9e4 !important;
+        }
+        .dm-muted {
+          color: #b9aca5 !important;
+        }
+        .dm-line {
+          border-bottom-color: #4a403b !important;
+        }
+        .dm-link{
+          background-color:#1f2a28 !important;
+          color: #ee8a86 !important;
+        }
+        .dm-footer {
+           background-color: #1f2a28 !important;
+           color: #b9aca5 !important;
+        }
+        .dm-footer-link{
+          color: #b9aca5 !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="dm-page"
+     style="margin: 0; padding: 0; background-color: #fbf7f4">
+    <table
+      role="presentation"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      class="dm-page"
+      style="background-color: #fbf7f4"
+    >
+
+      <tr>
+        <td align="center" style="padding: 24px 10px">
+          <table
+            role="presentation"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            width="600"
+            class="container dm-card"
+            style="width: 600px; max-width: 100%; background-color: #ffffff"
+          >
+            <tr>
+              <td align="center" class="content-cell" style="padding: 24px 30px 0 30px">
+                <img
+                  src="{{logo_url}}"
+                  alt="Made with love by needle noodle"
+                  width="300"
+                  style="
+                    display: block;
+                    width: 300px;
+                    max-width: 100%;
+                    height: auto;
+                    border: 0;
+                  "
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="content-cell" style="padding: 10px 30px 0 30px">
+                <h1
+                  class="dm-text"
+                  style="
+                    margin: 0 0 16px 0;
+                    font-family:
+                      Georgia, &quot;Times New Roman&quot;, Times, serif;
+                    font-size: 28px;
+                    line-height: 34px;
+                    font-weight: normal;
+                    color: #4a3f3b;
+                    text-align: center;
+                  "
+                >
+                  Thank you for your order, {{customer_name}}!
+                </h1>
+                <p
+                  class="dm-text"
+                  style="
+                    margin: 0 0 24px 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #4a3f3b;
+                    text-align: center;
+                  "
+                >
+                  I’m so happy you chose one of my patterns. Your files are
+                  ready to download from your Etsy account, and below you’ll
+                  find everything you need to get started.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="content-cell" style="padding: 0 30px 24px 30px">
+                <table
+                  role="presentation"
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                >
+                  <tr>
+                    <td
+                      class="dm-text"
+                      colspan="2"
+                      style="
+                        padding: 0 0 8px 0;
+                        border-bottom: 2px solid #a8938a;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: #4a3f3b;
+                      "
+                    >
+                      Order summary &middot; #{{order_number}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="dm-text dm-line"
+                      style="
+                        padding: 14px 0;
+                        border-bottom: 1px solid #e5ddd8;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #4a3f3b;
+                      "
+                    >
+                      <strong>{{pattern_name}}</strong><br />
+                      <span
+                      class="dm-muted" style="font-size: 14px; color: #6a5f5a">
+                        Digital download &middot; PDF Pattern
+                      </span>
+                    </td>
+                    <td
+                      class="dm-text dm-line"
+                      align="right"
+                      valign="top"
+                      style="
+                        padding: 14px 0 14px 16px;
+                        border-bottom: 1px solid #e5ddd8;
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 22px;
+                        font-size: 16px;
+                        color: #4a3f3b;
+                        white-space: nowrap;
+                      "
+                    >
+                      {{price}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="dm-text"
+                      style="
+                        padding: 14px 0 0 0;
+                        font-weight: bold;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #4a3f3b;
+                      "
+                    >
+                      Total
+                    </td>
+                    <td
+                      class="dm-text"
+                      align="right"
+                      style="
+                        padding: 14px 0 0 16px;
+                        font-weight: bold;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #4a3f3b;
+                        white-space: nowrap;
+                      "
+                    >
+                      {{price}}
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="content-cell" style="padding: 0 30px 8px 30px">
+                <h2
+                  class="dm-text"
+                  style="
+                    margin: 0 0 16px 0;
+                    font-family:
+                      Georgia, &quot;Times New Roman&quot;, Times, serif;
+                    font-size: 22px;
+                    line-height: 28px;
+                    font-weight: normal;
+                    color: #4a3f3b;
+                    text-align: center;
+                  "
+                >
+                  Getting started in 3 steps
+                </h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="content-cell" style="padding: 0 30px 14px 30px">
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="100%"
+                  style="width: 100%"
+                >
+                  <tr>
+                    <td width="44" valign="top" style="padding-right: 14px">
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            width="36"
+                            height="36"
+                            style="
+                              width: 36px;
+                              height: 36px;
+                              background-color: #5a7872;
+                              border-radius: 18px;
+                              font-family:
+                                Georgia, &quot;Times New Roman&quot;, serif;
+                              font-size: 18px;
+                              line-height: 36px;
+                              font-weight: bold;
+                              color: #ffffff;
+                            "
+                          >
+                            1
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="dm-text"
+                      valign="top"
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #4a3f3b;
+                      "
+                    >
+                      <strong>Print your pattern</strong><br />
+                      Print the PDF on stick &amp; stitch paper, or on regular
+                      paper if you prefer to trace it.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="content-cell" style="padding: 0 30px 14px 30px">
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="100%"
+                  style="width: 100%"
+                >
+                  <tr>
+                    <td width="44" valign="top" style="padding-right: 14px">
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            width="36"
+                            height="36"
+                            style="
+                              width: 36px;
+                              height: 36px;
+                              background-color: #5a7872;
+                              border-radius: 18px;
+                              font-family:
+                                Georgia, &quot;Times New Roman&quot;, serif;
+                              font-size: 18px;
+                              line-height: 36px;
+                              font-weight: bold;
+                              color: #ffffff;
+                            "
+                          >
+                            2
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="dm-text"
+                      valign="top"
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #4a3f3b;
+                      "
+                    >
+                      <strong>Stick it on your fabric</strong><br />
+                      Place the design on your jacket, jeans or hoop.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+                        <tr>
+              <td class="content-cell" style="padding: 0 30px 24px 30px">
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="100%"
+                  style="width: 100%"
+                >
+                  <tr>
+                    <td width="44" valign="top" style="padding-right: 14px">
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            width="36"
+                            height="36"
+                            style="
+                              width: 36px;
+                              height: 36px;
+                              background-color: #5a7872;
+                              border-radius: 18px;
+                              font-family: Georgia, 'Times New Roman', serif;
+                              font-size: 18px;
+                              line-height: 36px;
+                              font-weight: bold;
+                              color: #ffffff;
+                            "
+                          >
+                            3
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="dm-text"
+                      valign="top"
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #4a3f3b;
+                      "
+                    >
+                      <strong>Stitch and rinse</strong><br />
+                      Follow the stitch guide, then rinse away the paper under
+                      cool water.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" class="content-cell" style="padding: 0 30px 28px 30px">
+                <!--[if mso]>
+                  <v:roundrect
+                    xmlns:v="urn:schemas-microsoft-com:vml"
+                    xmlns:w="urn:schemas-microsoft-com:office:word"
+                    href="{{tutorials_url}}"
+                    style="height: 48px; width: 260px; v-text-anchor: middle"
+                    arcsize="13%"
+                    stroke="f"
+                    fillcolor="#c4504b"
+                  >
+                    <w:anchorlock />
+                    <center
+                      style="
+                        color: #ffffff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        font-weight: bold;
+                      "
+                    >
+                      Watch the stitch tutorials
+                    </center>
+                  </v:roundrect>
+                <![endif]-->
+                <!--[if !mso]><!-->
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      bgcolor="#c4504b"
+                      style="background-color: #c4504b; border-radius: 6px"
+                    >
+                      <a
+                        href="{{tutorials_url}}"
+                        style="
+                          display: inline-block;
+                          padding: 14px 28px;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-size: 16px;
+                          line-height: 20px;
+                          font-weight: bold;
+                          color: #ffffff;
+                          text-decoration: none;
+                        "
+                        >Watch the stitch tutorials</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+                <!--<![endif]-->
+              </td>
+            </tr>
+            <tr>
+            <td align="center" class="content-cell" style="padding: 0 30px 32px 30px">
+              <p
+                class="dm-text"
+                style="
+                  margin: 0 0 12px 0;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #4a3f3b;
+                "
+              >
+                Seeing what you create is my favourite part. Tag me on Instagram
+                <a class="dm-link"
+                  href="https://www.instagram.com/needle_noodle_/"
+                  style="color: #c4504b; font-weight: bold"
+                  >@needle_noodle_</a
+                >
+                or send me a photo, I'd love to see it!
+              </p>
+              <p
+                class="dm-text"
+                style="
+                  margin: 0;
+                  font-family: Georgia, 'Times New Roman', serif;
+                  font-size: 18px;
+                  line-height: 26px;
+                  color: #4a3f3b;
+                "
+              >
+                Happy stitching!
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td
+              align="center"
+              bgcolor="#e9efed"
+              class="content-cell dm-footer"
+              style="
+                padding: 22px 30px;
+                background-color: #e9efed;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                line-height: 20px;
+                color: #6b5f5a;
+              "
+            >
+              <strong>NeedleNoodleDesign</strong> &middot; Hand embroidery patterns<br />
+              You received this email because you ordered from NeedleNoodleDesign on
+              Etsy.<br />
+              <a class="dm-footer-link"
+                href="https://www.etsy.com/shop/NeedleNoodleDesign"
+                style="color: #6b5f5a; text-decoration: underline"
+                >Visit the shop</a
+              >
+            </td>
+          </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

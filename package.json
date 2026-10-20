@@ -1,0 +1,13 @@
+{
+  "name": "etsy-email-template",
+  "version": "1.0.0",
+  "description": "Responsive, dark-mode-ready HTML email template with a Node.js preview generator",
+  "main": "render.js",
+  "scripts": {
+    "preview": "node render.js"
+  },
+  "keywords": [],
+  "author": "Rebeka Miczakova",
+  "license": "ISC",
+  "type": "commonjs"
+}
