@@ -33,7 +33,6 @@
           border-bottom-color: #4a403b !important;
         }
         .dm-link{
-          background-color:#1f2a28 !important;
           color: #ee8a86 !important;
         }
         .dm-footer {
@@ -73,7 +72,7 @@
               <td align="center" class="content-cell" style="padding: 24px 30px 0 30px">
                 <img
                   src="{{logo_url}}"
-                  alt="Made with love by needle noodle"
+                  alt="{{logo_alt}}"
                   width="300"
                   style="
                     display: block;
@@ -161,7 +160,7 @@
                     >
                       <strong>{{pattern_name}}</strong><br />
                       <span
-                      class="dm-muted" style="font-size: 14px; color: #6a5f5a">
+                      class="dm-muted" style="font-size: 14px; color: #6b5f5a">
                         Digital download &middot; PDF Pattern
                       </span>
                     </td>
@@ -481,9 +480,9 @@
               >
                 Seeing what you create is my favourite part. Tag me on Instagram
                 <a class="dm-link"
-                  href="https://www.instagram.com/needle_noodle_/"
+                  href="{{instagram_url}}"
                   style="color: #c4504b; font-weight: bold"
-                  >@needle_noodle_</a
+                  >{{instagram_handle}}</a
                 >
                 or send me a photo, I'd love to see it!
               </p>
@@ -515,11 +514,11 @@
                 color: #6b5f5a;
               "
             >
-              <strong>NeedleNoodleDesign</strong> &middot; Hand embroidery patterns<br />
-              You received this email because you ordered from NeedleNoodleDesign on
+              <strong>{{shop_name}}</strong> &middot; {{shop_tagline}}<br />
+              You received this email because you ordered from {{shop_name}} on
               Etsy.<br />
               <a class="dm-footer-link"
-                href="https://www.etsy.com/shop/NeedleNoodleDesign"
+                href="{{shop_url}}"
                 style="color: #6b5f5a; text-decoration: underline"
                 >Visit the shop</a
               >

@@ -4,10 +4,14 @@
   "description": "Responsive, dark-mode-ready HTML email template with a Node.js preview generator",
   "main": "render.js",
   "scripts": {
-    "preview": "node render.js"
+    "preview": "node render.js",
+    "send": "node --env-file=.env send.js"
   },
   "keywords": [],
   "author": "Rebeka Miczakova",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "nodemailer": "^10.1.7"
+  }
 }

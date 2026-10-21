@@ -1,9 +1,14 @@
 const fs = require("fs");
 
 const commonData = {
-  logo_url: "../assets/logo.png",
-  tutorials_url:
-    "https://www.etsy.com/shop/NeedleNoodleDesign?ref=seller-platform-mcnav&section_id=57765964",
+  logo_url: "../assets/logo-placeholder.png",
+  logo_alt: "Example Shop logo",
+  shop_name: "Example Shop",
+  shop_tagline: "Hand embroidery patterns",
+  shop_url: "https://example.com/shop",
+  instagram_url: "https://example.com/instagram",
+  instagram_handle: "@exampleshop",
+  tutorials_url: "https://example.com/tutorials",
 };
 
 const testCases = [
