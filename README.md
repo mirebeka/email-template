@@ -4,9 +4,9 @@ A responsive, dark-mode-ready HTML order confirmation email for a small digital-
 
 > Portfolio project with sample data. It is not used to send real customer emails.
 
-| Light mode | Dark mode | Mobile |
+| Desktop Light mode | Desktop Dark mode | Mobile Light mode | Mobile Dark Mode |
 | :---: | :---: | :---: |
-| <img src="docs/email-light.png" alt="Email in light mode" width="250" /> | <img src="docs/email-dark.png" alt="Email in dark mode" width="250" /> | <img src="docs/email-mobile.png" alt="Email on a mobile screen" width="250" /> |
+| <img src="docs/desktop-light.png" alt="Email in light mode" width="250" /> | <img src="docs/desktop-dark.png" alt="Email in dark mode" width="250" /> | <img src="docs/mobile-light.png" alt="Email on a mobile screen" width="250" /> | <img src="docs/mobile-dark.png" alt="Email on a mobile screen" width="250" /> |
 
 ## Features
 
