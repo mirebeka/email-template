@@ -1,6 +1,6 @@
 # Order confirmation email template
 
-A responsive, dark-mode-ready HTML order confirmation email for a small digital-patterns shop, with a Node.js preview generator and a test sender.
+A responsive, dark-mode-ready HTML order confirmation email for a small embroidery shop that sells digital products, with a Node.js preview generator and a test sender.
 
 > Portfolio project with sample data. It is not used to send real customer emails.
 
